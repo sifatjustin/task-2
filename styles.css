@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: url(./svg/wave\ \(1\).svg);
+    background-repeat: no-repeat; */
+
+}
+
+section {
+    background: url(./svg/wave\ \(1\).svg);
+    background-repeat: no-repeat;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.container-one,
+.container-two {
+    display: flex;
+    justify-content: space-between;
+    /* padding-top: 30px; */
+    gap: 150px;
+    padding: 50px 80px;
+
+}
+
+.text {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.text h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #2f353e;
+    letter-spacing: -.75px;
+    text-align: start;
+}
+
+.svg img {
+    height: 300px;
+}
+
+.container-two{
+    margin-top: 50px;
+}
+
+
+
+.description {
+    align-self: last baseline;
+
+}
+
+.description h2  {
+    font-size: 42px;
+    font-weight: 700;
+    color: #2f353e;
+    letter-spacing: -.75px;
+    text-align: start;
+    padding-bottom: 20px;;
+}
+
+/* 
+media queries for small device
+ */
+
+@media only screen and (max-width:480px) {
+
+    .container-one,
+    .container-two {
+        flex-direction: column-reverse;
+        gap: 30px;
+        padding: 10px 10px;
+    }
+
+    .container-two {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    section {
+        /* background-image: url(./svg/wave\ \(1\).svg);
+        background-repeat: no-repeat; */
+        margin: 0 auto;
+        /* padding: 0 20px 0; */
+    }
+
+    .container-two .svg img {
+        position: relative;
+        margin-top: 20px;
+    }
+
+    /* .text h2 {
+        font-size: 22px;
+        font-weight: 700;
+        color: #2f353e;
+        letter-spacing: -.75px;
+        text-align: start;
+    } */
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .container-one,
+    .container-two {
+        gap: 30px;
+        padding: 10px 10px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .container-one,
+    .container-two {
+        gap: 50px;
+        padding: 20px 40px;
+    }
+}
